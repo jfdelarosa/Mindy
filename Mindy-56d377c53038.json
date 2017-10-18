@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mindy-df862",
+  "private_key_id": "56d377c53038920cd5a5468c7e288261f75188c4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCtAnk77pZTg4xf\nxNuwp9wdn6g3FFBv1vNkrUY2pxp4TJWtglnHJNemFExXj0iRnDYUmAHbdhbR+d0u\ncDO2TEvfMUDZrdjEZXsNgnVlTjoeUk7TdaHgBT5e8iVInOk7RsWwsry/H6yVpm5y\nfZDhiZC+UCwzZDpAwGK2fcFKROh6Vv3RVf6i80svKgKW/Pu2Ok39vIw65kRtQUhd\nvIYk6CX2R7znsnIyWOBuWYmvJgAIVMD6IMtJ0NwF1Jkk4W0s7rlqKs7gZfCNF8DC\nOcCrSnSOmYF98LpAYRQ1lM772aoBjqth+4PaU44+YebMTAc93xBMWSLXJHlpYVxV\nTUTbjiWHAgMBAAECggEAAr+ET3hluOPhCfBlkPPJokrT8DQJZw1iBlpeQCX9XKXS\nxtPIO0qRhljSMZ3cCDwT+9XCScshZ6pxYfh0SdQCbIQqxIpnZA88miVVWguZDrw9\n9kvrC1Tp/bYY84NSjRd9smXUa7DEHAhtvrHR6FM4El3RpetUpYyoxL9Qn65ihvbu\nFM1V7Ok8T7vnOIfjFYNv+eptm3b+/v/VN1D4SpmPG6gY5YkRcn3KsHU6GcJzdENJ\nXRBp3U0wOQmgj77T5LuH4jL8QxDJ1hsJJvcUHm6KJoBoKnZNuRvHEmkqjOe9bP/3\neiIft/H8s/wmI6UkG40hzvgJ9liu18E9VXZ+vqMT6QKBgQDe4hJhGOtQbxzObJ5J\n12rbhypkjHRoZd2E0HHJR0D6kgT4d2YxU67igrsmhmoB0XY6czj45XV+/EewyC9s\n7EBHbf/IFGr7GL7/yGjfnF1KnqjVwLzJ3bmvJhYaRp6SGItRAOCQVtFxnVYbx1fJ\n1mNnKxxmau+R3pY7BJ5wtoDcmwKBgQDGt1aeN10DHm5aLQxoPhkaF4wf1qB4bvaG\nCTBGcICh3uxQdLuogmLgmEX3NGcZVesovweQEHxu7wc6KTPvJYazdyizLB8h/diR\nRISfw8J6GKAXe6xkmlqfydd92c0WQLWGnq7ItQKRM2c+Z75x3DwgIQdjjT8vu/Tq\nDpK+OcCrhQKBgQDVXFM90g4JjKRl00Lf6zCnAEiLwoz5F3KsXqJejTBd7gSGGj6g\nv7wtp/oiUhAOt4ZXQ8/pLDeDHVw/lhMYUTzjZCC0Vx9mSfUlhKMoVFZWRXXYUc4n\n7HKBgZMtCidoMcjD/XP7mLCc84Hny7d1Rx8XNwTT4lB+MjdcPfqyaXMIOwKBgQC5\nBSNlFO9JZCAjXiZbONZucNZLHq8y8z4d9pg4Pa/HB6TIFKhVcXFW5PDgBq6n7FOU\nEKmd/XueXnhAMvTkCfCtUJlYmhAyugPW3hEOIFsHC76jnscYtI8EkA5QY2aM/ZsG\nyOC8h6zoPRA4DqhHo2NoFtimXHEkpMCY3RDMhUFbcQKBgHyZ4+NnSYE61NtWnJWc\nvDMwxS87p4dMoJFhEejA3f50BaB42zkXL/xojrKpgG31gC54wZQPY45rZhpgvZXY\n44U+yt0GGbgDXzYMbVcm+zlY5+zSRtTJS3gXh0aN3i4+mLEsqk7tJF02tJtg8Duz\nEBPP/Gf4LNpRcbtSPe3FjwP5\n-----END PRIVATE KEY-----\n",
+  "client_email": "mindyserver@mindy-df862.iam.gserviceaccount.com",
+  "client_id": "109894918668458091077",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mindyserver%40mindy-df862.iam.gserviceaccount.com"
+}

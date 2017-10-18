@@ -1,0 +1,26 @@
+{
+  "name": "mindy",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "authors": [
+    "jfdelarosa"
+  ],
+  "license": "CC0-1.0",
+  "keywords": [
+    "pos"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "requirejs": "^2.3.3"
+  }
+}

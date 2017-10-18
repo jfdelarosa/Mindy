@@ -1,0 +1,74 @@
+//
+// Bars.css
+// --------------------------------------------------
+
+.toolbar {
+  min-height: 22px;
+  // box-shadow: inset 0 1px 0 #f5f4f5;
+  //@include linear-gradient(#e8e6e8, #d1cfd1);
+  //background: $app-color;
+  @include clearfix;
+}
+
+.toolbar-header {
+  // border-bottom: 1px solid $dark-border-color;
+  -webkit-app-region: drag;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  .header-buttons{
+    padding: .72rem 0;
+    margin-left: auto;
+    .icon{
+      -webkit-app-region: no-drag;
+      cursor: pointer;
+      font-size: 1.1rem;
+      margin-left: 0.4rem;
+    }
+  }
+}
+
+.toolbar-footer {
+  // border-top: 1px solid $dark-border-color;
+  -webkit-app-region: drag;
+}
+
+// Simple centered title to go in the toolbar
+.title {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  color: #555;
+  cursor: default;
+}
+
+// Borderless toolbar for the clean look
+.toolbar-borderless {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+// Buttons in toolbars
+.toolbar-actions {
+  // margin-top: 4px;
+  // margin-bottom: 3px;
+  // padding-right: 3px;
+  // padding-left: 3px;
+  // padding-bottom: 3px;
+  // -webkit-app-region: drag;
+  // @include clearfix;
+
+  // > .btn,
+  // > .btn-group {
+  //   margin-left: 4px;
+  //   margin-right: 4px;
+  // }
+  &.on-top{
+    position: absolute;
+    top: 0.85rem;
+    left: 1rem;
+  }
+}

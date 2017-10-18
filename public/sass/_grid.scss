@@ -1,0 +1,102 @@
+//
+// The Grid.css
+// --------------------------------------------------
+
+.pane-group {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+
+.pane {
+  position: relative;
+  overflow-y: auto;
+  flex: 1;
+  border-left: 1px solid $border-color;
+
+  &:first-child {
+    border-left: 0;
+  }
+}
+
+
+.pane-sm {
+  width: 180px;
+  //min-width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pane-mini {
+  width: 80px;
+  flex: none;
+}
+
+.pane-one-fourth {
+  width: 25%;
+  flex: none;
+}
+
+.pane-one-third {
+  width: 33.3%;
+}
+
+.grid {
+  display: flex;
+  &.top {
+    align-items: flex-start;
+  }
+  &.bottom {
+    align-items: flex-end;
+  }
+  &.center {
+    align-items: center;
+  }
+  .right{
+    margin-left: auto;
+  }
+  .cell {
+    flex: 1;
+    padding-right: 1rem;
+    &:last-of-type{
+      padding: 0;
+    }
+    &.top {
+      align-self: flex-start;
+    }
+    &.bottom {
+      align-self: flex-end;
+    }
+    &.center {
+      align-self: center;
+    }
+    &.one-third{
+      width: 33.33%;
+      flex: none;
+    }
+    &.two-thirds{
+      width: 66.66%;
+      flex: none;
+    }
+    &.one-fourth{
+      width: 25%;
+      flex: none;
+    }
+  }
+  &.equal > .cell{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+  }
+  &.gutters {
+    margin:-1em 0 1em -1em;
+    & > .cell {
+      padding: 1em 0 0 1em;
+    }
+  }
+}
+

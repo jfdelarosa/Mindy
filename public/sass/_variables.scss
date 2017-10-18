@@ -1,0 +1,79 @@
+//
+// Variables
+// --------------------------------------------------
+
+// Type
+// --------------------------------------------------
+
+// Try to use the system's font on whatever platform the user is on.
+$font-family-default: 'Roboto' !default;
+$font-size-default: 13px !default;
+$font-weight: 500 !default;
+$font-weight-bold: 700 !default;
+$font-weight-light: 300 !default;
+$line-height-default: 1.6 !default;
+
+
+// Colors
+// --------------------------------------------------
+
+$bg-color: #F5F5F5;
+
+// Main colors
+$app-color: #4D5061;
+$logo-color: #5C80BC;
+
+$primary-color: #3b99fc !default;
+$chrome-color:  #fff !default;
+
+// Copy
+$gray-color: #6D6F7D !default;
+
+// Borders
+$border-color: #ddd !default;
+$dark-border-color: #c2c0c2 !default;
+$darker-bottom-border-color: #a19fa1 !default;
+$toolbar-border-color: #939293 !default;
+
+// Action colors
+$default-color:  #fff !default;
+$positive-color: #34c84a !default;
+$negative-color: #fc605b !default;
+$warning-color: #fdbc40 !default;
+
+// Shades
+$dark-color: #57acf5 !default;
+
+// Focus and active colors
+$active-color: #116cd6;
+$focus-input-color: lighten($primary-color, 10%)  !default;
+
+// Other
+// --------------------------------------------------
+
+// Border radius
+$default-border-radius: 4px;
+
+// Padding
+$padding: 10px;
+$padding-mini: 3px;
+$padding-less: 5px;
+$padding-more: 20px;
+
+$breakpoints: (
+  'sm':  ( max-width:  767px ),
+  'md': ( max-width:  992px ),
+  'lg':  ( max-width: 1200px )
+) !default;
+
+//shadow
+$shadow: 0 1px 2px rgba(0,0,0,0.1);
+// Add percentage of white to a color
+@function tint($color, $percent){
+  @return mix(white, $color, $percent);
+}
+
+// Add percentage of black to a color
+@function shade($color, $percent){
+  @return mix(black, $color, $percent);
+}

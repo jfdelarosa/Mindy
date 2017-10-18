@@ -1,0 +1,15 @@
+.alert{
+  padding: 0.5rem 1rem;
+  &.alert-warning {
+    @include alert($warning-color);
+  }
+}
+
+.card{
+  background: white;
+  padding: 1rem;
+  box-shadow: $shadow;
+  span.big{
+    font-size: 2rem;
+  }
+}

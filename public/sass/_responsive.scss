@@ -1,0 +1,19 @@
+#pos{
+  .grid.top{
+    @include respond-to("sm"){
+      flex-direction: column-reverse;
+    }
+    & > .two-thirds{
+      @include respond-to("sm"){
+        width: 100%;
+        padding: 0;
+      }
+    }
+    & > .one-third{
+      @include respond-to("sm"){
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

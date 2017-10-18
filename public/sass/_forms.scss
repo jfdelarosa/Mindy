@@ -1,0 +1,95 @@
+//
+// Forms.css
+// Adapted from Bootstrap's forms.less (https://github.com/twbs/bootstrap/blob/master/less/forms.less)
+// --------------------------------------------------
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #67646b;
+  font-weight: bold;
+}
+
+input[type="search"] {
+  box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  line-height: normal;
+}
+
+.form-control {
+  cursor: text;
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  line-height: 1rem;
+  background-color: $chrome-color;
+  border: 1px solid $border-color;
+  border-radius: $default-border-radius;
+  outline: none;
+
+  &:focus {
+    border-color: $focus-input-color;
+    // box-shadow: 3px 3px 0 $focus-input-color,
+    //             -3px -3px 0 $focus-input-color,
+    //             -3px 3px 0 $focus-input-color,
+    //             3px -3px 0 $focus-input-color;
+  }
+}
+
+// Reset height for `textarea`s
+textarea {
+  height: auto;
+}
+
+// Form groups
+//
+// Designed to help with the organization and spacing of vertical forms. For
+// horizontal forms, use the predefined grid classes.
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+// Checkboxes and radios
+//
+// Indent the labels to position radios/checkboxes as hanging controls.
+
+.radio,
+.checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  label {
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: normal;
+  }
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 4px;
+}
+
+// Form actions
+.form-actions .btn {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
