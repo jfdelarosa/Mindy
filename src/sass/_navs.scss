@@ -1,0 +1,113 @@
+//
+// Navs.scss
+// --------------------------------------------------
+nav{
+
+  .nav-group {
+    font-size: 14px;
+  }
+
+  .nav-group-item {
+    padding: 0.6rem 1rem;
+    display: block;
+    color: #9D9FA8;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    &.pro{
+      background: #F4D35E;
+      color: #6F602B;
+      font-weight: bold;
+      &:active,
+      &:hover,
+      &.active,
+      &.router-link-active{
+        background-color: transparent;
+        color: #F4D35E;
+      }
+    }
+    &:active,
+    &:hover,
+    &.active,
+    &.router-link-active{
+      background-color: #6D6F7D;
+      color: #DEDFE2;
+      .icon{
+        color: #EEEFF0;
+      }
+    }
+
+    .icon {
+      width: 19px; // Prevents a one pixel cutoff
+      height: 18px;
+      float: left;
+      color: #BEBFC5;
+      margin-top: -3px;
+      margin-right: 7px;
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+
+  .nav-group-title {
+    margin: 0;
+    padding: 10px 10px 2px;
+    font-size: 12px;
+    font-weight: 500;
+    color: lighten($gray-color, 20%);
+  }
+}
+
+.user-pane{
+  text-align: center;
+  margin-top: auto;
+  background-color: shade($app-color, 20%);
+  .profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 2.5rem;
+      border-radius: 50%;
+      margin: 1rem;
+    }
+    a{
+      display: block;
+
+      color: white;
+    }
+  }
+  .user-menu {
+    display: flex;
+    a {
+      text-align: center;
+      color: white;
+      width: 50%;
+      padding: 0.5rem 0;
+      font-size: 1.25rem;
+      background-color: shade($app-color, 30%);
+      &:hover{
+        background-color: shade($app-color, 35%);
+      }
+    }
+  }
+}
+
+
+.nav{
+  .nav-item{
+    &+.nav-item{
+      $padding: 0.25rem;
+      margin-top: $padding;
+      border-top: 1px solid #eee;
+      padding-top: $padding;
+    }
+    &:hover{
+      cursor: pointer;
+      color: black;
+    }
+  }
+}
