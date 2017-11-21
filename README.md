@@ -29,3 +29,9 @@ $ electron .
 |    Usuario    | Contraseña |
 | :-----------: |  :------:  |
 | demo@demo.com |  password  |
+
+### Comunidad
+
+https://join.slack.com/t/mindypos/shared_invite/enQtMjc0MDQyNDY5MDA4LTljNDllYWZiYTIyZDQ0ZDA1MTk0NTlkMGRlZTJiNWNmMzA4ZDU0MWRiNmJmNDk5MWY0ZmM3MDRkODgxZGU1MWY
+
+http://mindypos.slack.com

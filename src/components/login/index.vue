@@ -1,3 +1,4 @@
+<template lang="pug">
 .window-content#login
   header.toolbar.toolbar-header
     .header-buttons
@@ -17,3 +18,4 @@
         span(class="icon icon-home")
         | Entrar
     a(href="#") Recuperar contraseña
+</template>

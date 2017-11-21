@@ -1,5 +1,7 @@
 <template lang="pug">
+
 #pos.padded-more
+  mindy-autocomplete(data="http://5a1123312437c900125827c7.mockapi.io/api/v1/items")
   .grid.top
     .cell.two-thirds
       form

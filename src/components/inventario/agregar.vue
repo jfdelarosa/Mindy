@@ -4,20 +4,20 @@ div
     router-link.btn.btn-default.btn-outline(to="/inventario/")
       span.icon.icon-left-open
       | Regresar
-  form#producto.padded-more(method="POST")
+  form#producto.padded-more(method="POST" v-on:submit.prevent="post")
     .grid
       .cell
         .form-group
           label Nombre del producto
-          input.form-control(type='text' placeholder='Nombre del producto' name='nombre')
+          input.form-control(type='text' placeholder='Nombre del producto' v-model='item.nombre')
       .cell
         .form-group
           label Existencia
-          input.form-control(type='numbrer' value='0' name='existencia')
+          input.form-control(type='numbrer' value='0' v-model='item.existencia')
       .cell
         .form-group
           label Unidad de medida
-          select.form-control(name='unidad')
+          select.form-control(v-model='item.unidad')
             optgroup(label="unidades")
               option unidades
               option paquetes
@@ -35,16 +35,30 @@ div
               option centimetros
     .form-group
       label Description
-      textarea.form-control(rows='3' name='desc')
+      textarea.form-control(rows='3' v-model='item.desc')
     .form-actions
       .grid
         .cell
           button.btn.btn-block.btn-primary(type='submit') Agregar producto
         .cell.one-third
-          a.btn.btn-block.btn-negative(href='./inventario/index') Cancelar
+           router-link.btn.btn-block.btn-negative(to='/inventario/') Cancelar
 </template>
 <script>
 export default {
   name: 'inventarioAgregar',
+  data(){
+    return {
+      item: {}
+    }
+  },
+  methods: {
+    post: function(){
+      this.$http.post('items', this.item).then(function(res){
+        console.log('okkkk', res);
+      }, (e) => {
+        console.log('¡Error!', e)
+      });
+    }
+  }
 }
 </script>

@@ -36,10 +36,6 @@
               span.icon.icon-forward
       .pane
         header.toolbar.toolbar-header
-          //- .toolbar-actions
-          //-   button.btn.btn-default.btn-dropdown.btn-outline
-          //-     span.icon.icon-user
-          //-     | jfdelarosa
           .header-buttons
             span#min-btn.icon.icon-record(style='color:#34c84a;')
             span#max-btn.icon.icon-record(style='color:#fdbc40;')
