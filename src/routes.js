@@ -5,6 +5,10 @@ import InventarioAgregar from './components/inventario/agregar';
 import Pos from './components/pos/index';
 
 export default [{
+    path: '*',
+    redirect: '/main'
+  },
+  {
     path: '/main',
     name: 'Main',
     component: Main

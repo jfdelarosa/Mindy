@@ -9,6 +9,7 @@ Vue.use(Resource);
 Vue.http.options.emulateJSON = true;
 Vue.http.options.root = 'http://5a1123312437c900125827c7.mockapi.io/api/v1/';
 const router = new Router({
+  mode: 'history',
   routes: Routes
 });
 
