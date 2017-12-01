@@ -1,7 +1,7 @@
 <template lang="pug">
 div
   .toolbar-actions.on-top
-    router-link.btn.btn-default.btn-outline(to="/inventario/")
+    router-link.btn.btn-default.btn-outline(v-bind:to="{ name: 'Inventario' }")
       span.icon.icon-left-open
       | Regresar
   form#producto.padded-more(method="POST" v-on:submit.prevent="post")
@@ -41,7 +41,7 @@ div
         .cell
           button.btn.btn-block.btn-primary(type='submit') Agregar producto
         .cell.one-third
-           router-link.btn.btn-block.btn-negative(to='/inventario/') Cancelar
+           router-link.btn.btn-block.btn-negative(v-bind:to="{ name: 'Inventario' }") Cancelar
 </template>
 <script>
 export default {

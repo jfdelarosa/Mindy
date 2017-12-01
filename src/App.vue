@@ -5,13 +5,13 @@
       .pane-sm.sidebar
         h1.logo Mindy
         nav.nav-group
-          router-link.nav-group-item(to="/main")
+          router-link.nav-group-item(v-bind:to="{ name: 'Main' }")
             span.icon.icon-home
             |  Inicio
-          router-link.nav-group-item(to="/pos/")
+          router-link.nav-group-item(v-bind:to="{ name: 'Pos' }")
             span.icon.icon-basket
             |  Punto de venta
-          router-link.nav-group-item(to="/inventario/")
+          router-link.nav-group-item(v-bind:to="{ name: 'Inventario' }")
             span.icon.icon-box
             |  Inventario
           span.nav-group-item
@@ -20,7 +20,7 @@
           span.nav-group-item
             span.icon.icon-user
             |  Usuarios
-          router-link.nav-group-item(to="config")
+          span.nav-group-item
             span.icon.icon-cog
             |  Configuraci&oacute;n
           span.nav-group-item.pro(onclick="goTo('https://www.facebook.com/iosoft.in/');")
