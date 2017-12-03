@@ -85,6 +85,10 @@
       width: 25%;
       flex: none;
     }
+    &.one-half{
+      width: 50%;
+      flex: none;
+    }
   }
   &.equal > .cell{
     display:-webkit-box;
@@ -99,4 +103,3 @@
     }
   }
 }
-
